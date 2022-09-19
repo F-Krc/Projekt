@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.header {
+  width: 100%;
+  height: 40px;
+  background-color: blue;
+  height: 50px;
+  order: -1;
+}
+.navbar {
+  background-color: blue;
+  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  align-items: center;
+}
+.navbar a {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: blue;
+  padding: 10px;
+}
+.navbar a:hover {
+  background-color: coral;
+  color: blue;
+}
+.nav-right {
+  display: flex;
+  align-content: center;
+}
+input[type="text"] {
+  width: 400px;
+  height: 30px;
+  color: black;
+  margin-top: 12px;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: white;
+  border: #ccc;
+  border-radius: 5px;
+}
+.anmelden a {
+  text-decoration: none;
+}
+.anmelden a img {
+  width: 30px;
+}
+#sprache {
+  margin: 10px;
+  height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+}
+.anmelden a:hover {
+  background-color: coral;
+  color: blue;
+  border-radius: 10px;
+}
+#sprache:hover {
+  background-color: #eee;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  flex-shrink: 0;
+  background-color: #ccc;
+}
+.sidebar ul {
+  list-style-type: none;
+  display: block;
+  padding: 0;
+}
+.sidebar li a {
+  position: relative;
+  display: block;
+  left: -180px;
+  transition: 1s;
+  width: 200px;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border-radius: 0 5px;
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 25px;
+}
+.sidebar li a:hover {
+  left: 0px;
+}
+#bewerbung1 {
+  background-color: blue;
+  color: white;
+}
+#projects1 {
+  background-color: red;
+  color: white;
+}
+#hobbie1 {
+  background-color: green;
+  color: white;
+}
+#frei1 {
+  background-color: chocolate;
+  color: white;
+}
+.icon {
+  margin-bottom: 0;
+}
+ion-icon {
+  margin-left: 5px;
+  font-size: 30px;
+}
+ion-icon:hover {
+  font-size: 35px;
+}
+.oben {
+  border: 2px solid white;
+  border-radius: 12px;
+  width: auto;
+  height: auto;
+  background-color: #ccc;
+  text-align: center;
+}
+.oben a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+.oben:hover {
+  background-color: white;
+  color: #ccc;
+}
+.content {
+  flex-grow: 1;
+  height: calc(100% - 70px);
+  overflow-y: scroll;
+}
+h1,
+h2 {
+  background-color: coral;
+  border-radius: 25px;
+  color: blue;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+section {
+  height: 100%;
+  padding: 20px;
+  flex-shrink: 0;
+}
+section#home,
+section#kontakt,
+section#anmelden {
+  background-image: url(bilder/future.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+section#lebenslauf {
+  background-image: url(bilder/lebenslauf.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+section#berufsberatung {
+  background-image: url(bilder/berufsberatung.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+section#bewerbung {
+  background-image: url(bilder/bewerbung.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+section#projekts {
+  background-image: url(bilder/projekt.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+section#hobbie {
+  background-image: url(bilder/hobbie.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+section#uns {
+  background-image: url(bilder/uns.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+section#frei {
+  background-image: url(bilder/freiwillig.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+.home-text,
+.kontakt,
+.anmelden,
+.cw,
+.bewrbng,
+.beratung,
+.hobbies,
+.projekt,
+.uuns,
+.freiwillig {
+  width: auto;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+}main{
+  display: inline-block;
+  width: 900px;
+}
+p {
+  display: inline-block;
+  font-size: 22px;
+  width: 850px;
+  margin: 40px 20px;
+}
+.detail {
+  width: 850px;
+  margin: 20px;
+}
+table,
+th,
+td {
+  font-size: 20px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 3px;
+}
+th,
+caption {
+  font-size: larger;
+  font-weight: bold;
+}
+.uns-team table {
+  margin: auto ;
+  background-color: beige;
+}
+.projekt ol {
+  padding-left: 40px;
+}
+.projekt ul {
+  padding-left: 50px;
+}
+.form-frame {
+  display: flex;
+  align-items: center;
+}
+.kontakt p {
+  width: 400px;
+  font-size: 20px;
+  font-style: italic;
+  padding-left: 20px;
+}
+.dmap {
+  margin-left: 5px;
+}
+.kontakt form {
+  padding-left: 20px;
+}
+label {
+  display: inline-block;
+  width: 140px;
+}
+label[for="new-anmeldung"] {
+  width: auto;
+}
+input[type="radio"] {
+  margin-left: 142px;
+  font-size: 16px;
+}
+.kontakt input {
+  border: 2px solid black;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.kontakt input:hover {
+  background-color: beige;
+}
+textarea {
+  vertical-align: top;
+  width: 400px;
+  font-size: 16px;
+  height: 100px;
+  margin-left: 2px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 2px;
+}
+textarea:focus {
+  background-color: beige;
+  border: none;
+  outline: none;
+}
+input:focus {
+  background-color: beige;
+  border: none;
+  outline: none;
+}
+input[type="submit"] {
+  width: 130px;
+  height: 30px;
+}
+.anmelden form {
+  text-align: center;
+  margin-top: 50px;
+}
+.anmelden input {
+  border: 2px solid black;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.anmelden input:hover {
+  background-color: beige;
+}
+input[type="password"] {
+  width: 400px;
+  height: 30px;
+  color: black;
+  margin-top: 12px;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+input[type="reset"] {
+  width: 130px;
+  height: 30px;
+}
+.bilder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item img {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  width: 100%;
+  background-color: gray;
+}
+
+@media screen and (max-width: 480px) {
+  .layout,
+  main,
+  section,
+  aside,
+  header {
+    display: block;
+  }
+}
